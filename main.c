@@ -16,13 +16,13 @@ int main()
    FILE *fptr;
 
    if ((fptr = fopen("program.bin","rb")) == NULL){
-       printf("Error! opening file");
+       printf("Erro ao abrir o arquivo.");
 
-       // Program exits if the file pointer returns NULL.
+       // O programa irá finalizar caso não consiga abrir o arquivo.
        exit(1);
    }
 
-   // Moves the cursor to the end of the file
+   // Move o cursos para a última posição no arquivo binário.
    fseek(fptr, sizeof(struct threeNum), SEEK_END);
 
    for(n = 1; n < 5; ++n)
