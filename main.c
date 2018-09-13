@@ -6,6 +6,9 @@ struct threeNum
    int n1, n2, n3;
 };
 
+/*
+ * Lendo informações de trás para frente do arquivo binário gerado no exemplo 3
+ * */
 int main()
 {
    int n;
